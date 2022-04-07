@@ -1,8 +1,8 @@
 {
-  "name": "react-awesome-calendar",
-  "version": "1.0.14",
+  "name": "@osam2/react-calendar",
+  "version": "0.0.1",
   "license": "MIT",
-  "author": "Michael Hamilton",
+  "author": "Michael Hamilton - oSam2",
   "description": "An easy to use React Calendar component",
   "keywords": [
     "calendar",
@@ -14,13 +14,18 @@
     "monthly"
   ],
   "homepage": "https://github.com/mikeham98/react-awesome-calendar",
-  "bugs": "https://github.com/mikeham98/react-awesome-calendar/issues",
+  "bugs": {
+    "url": "https://github.com/mikeham98/react-awesome-calendar/issues"
+  },
   "main": "build/index.js",
   "scripts": {
     "start": "webpack --watch --mode development",
     "build": "webpack --mode production",
     "test": "jest",
     "publishPackage": "npm run build && npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "browserslist": [
     ">0.2%",
@@ -40,9 +45,9 @@
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-typeof-symbol": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
-    "@babel/plugin-transform-typeof-symbol": "^7.10.4",
     "@babel/register": "^7.10.5",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.3.0",
@@ -68,7 +73,7 @@
     "jest-cli": "^26.4.1",
     "jwt-decode": "^2.2.0",
     "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.1",
     "prettier": "2.0.5",
     "prettier-eslint": "^11.0.0",
     "prettier-eslint-cli": "^5.0.0",
@@ -101,5 +106,12 @@
     "moduleNameMapper": {
       "^.+\\.(css|less|scss)$": "babel-jest"
     }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oSam2/react-awesome-calendar.git"
   }
 }
