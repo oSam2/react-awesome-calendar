@@ -10,20 +10,20 @@ export default class Mode extends React.PureComponent {
   returnModes() {
     const { active } = this.props;
     const modes = [
-      {
-        id: year,
-        mode: yearlyMode,
-        text: 'Year',
-      },
+      // {
+      //   id: year,
+      //   mode: yearlyMode,
+      //   text: 'Ano',
+      // },
       {
         id: month,
         mode: monthlyMode,
-        text: 'Month',
+        text: 'Mês',
       },
       {
         id: day,
         mode: dailyMode,
-        text: 'Day',
+        text: 'Dia',
       },
     ];
     if (Array.isArray(modes) && modes.length) {

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './index.styles.scss';
 import { getCalendarMonth, getEventsForCalendar } from '../util/calendar';
 import Week from './Week';
+import {Languages} from '../langs/index'
 
 export default class Monthly extends React.Component {
   constructor(props) {
@@ -71,5 +72,5 @@ export default class Monthly extends React.Component {
 }
 
 Monthly.defaultProps = {
-  daysOfWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  daysOfWeek: Languages.PT.DAYS,
 };

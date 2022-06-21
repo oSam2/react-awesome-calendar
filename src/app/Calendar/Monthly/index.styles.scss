@@ -4,11 +4,19 @@
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
   font-weight: 300;
+  padding-right: 100px;
   div {
     box-sizing: border-box;
     text-align: right;
     padding: 0 5px;
     width: calc(100% / 7);
     display: inline-block;
+  }
+}
+@media (max-width: 900px)
+{
+  .calendarDayOfWeek
+  {
+    padding-right: 10px;
   }
 }

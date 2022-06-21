@@ -24,11 +24,6 @@ npm install --save react-awesome-calendar
 <img src="https://raw.githubusercontent.com/mikeham98/react-awesome-calendar/develop/assets/daily.jpg" height="300">
 </div>
 
-<div style="display: inline-block; margin-right: 20px;">
-<h3>Yearly</h3>
-<img src="https://raw.githubusercontent.com/mikeham98/react-awesome-calendar/develop/assets/yearly.jpg" height="300">
-</div>
-
 ## Basic use
 ```bash
 import Calendar from 'react-awesome-calendar';
@@ -103,7 +98,7 @@ If you wish to provide a customer header component you can pass in a prop which 
         month: numeric,
         day: numeric
     },
-    mode: "dailyMode" || "monthlyMode" || "yearlyMode" - this can be used to determine what the current mode of the calender is. This way you can choose whether to show a year, month or day depending on the mode,
+    mode: "dailyMode" || "monthlyMode" - this can be used to determine what the current mode of the calender is. This way you can choose whether to show a year, month or day depending on the mode,
     prev: {
         year: numeric,
         month: numeric,

@@ -1,5 +1,6 @@
 import { endPosition, middlePosition, startPosition } from '../constants';
 import { getDate } from './date';
+import { Languages } from '../langs/index'
 
 let firstDayOfWeek = 0;
 let lastDayOfWeek = 6;
@@ -185,19 +186,6 @@ export const getEventsForCalendar = (events, calendar) => {
 };
 
 export const getMonthName = month => {
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
+  const months = Languages.PT.MONTHS
   return months[month];
 };
